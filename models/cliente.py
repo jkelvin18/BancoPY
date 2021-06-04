@@ -12,4 +12,7 @@ class Cliente:
         self.__data_nascimento: date = str_para_date(data_nascimento)
         self.__data_cadastro: date = date.today()
         Cliente.contador += 1
---Parei em 11:40
+
+@property
+def codigo(self: object) -> int:
+    return self.__codigo
