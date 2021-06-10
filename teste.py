@@ -1,11 +1,7 @@
-from datetime import date
-from datetime import datetime
+from models.cliente import Cliente
+from models.conta import Conta
 
-def date_para_str(data: date) -> str:
-    return data.strftime('%d/%n/%Y')
+felicity: Cliente = Cliente('Felicity', 'felicity@email', '123.456.789-81', '02/09/1972')
 
-def str_para_date(data: str) -> date:
-    return datetime.strptime(data, '%d/%n/%Y')
+print(felicity)
 
-def formata_float_str_moeda(valor: float) -> str:
-    return f'R$ {valor:,.2f}'
