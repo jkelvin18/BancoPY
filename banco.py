@@ -54,7 +54,7 @@ def criar_conta() -> None:
 
     nome: str = input('Nome do cliente: ')
     email: str = input('E-mail do cliente: ')
-    cpf: str = input('CPF do cliente')
+    cpf: str = input('CPF do cliente: ')
     data_nascimento: str = input('Data de nascimento do cliente: ')
 
     cliente: Cliente = Cliente(nome, email, cpf, data_nascimento)
